@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tato Bot — A Website Assistant You Own</title>
+  <meta
+    name="description"
+    content="Tato Bot is a customizable website assistant that answers common customer questions, helps visitors find what they need, and supports optional AI integration."
+  >
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Tato Bot</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#demo">Try Tato</a>
+        <a href="#install">Easy Install</a>
+        <a href="#features">What He Does</a>
+        <a href="#story">Meet Tato</a>
+        <a href="#ai">Optional AI</a>
+        <a href="#buy">Buy Tato</a>
+      </nav>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#demo">Try Tato</a>
+        <a href="#install">Easy Install</a>
+        <a href="#features">What He Does</a>
+        <a href="#story">Meet Tato</a>
+        <a href="#ai">Optional AI</a>
+        <a href="#buy">Buy Tato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">A WEBSITE ASSISTANT YOU OWN</p>
+
+          <h1>
+            Meet Tato.
+            <span>He answers the questions your visitors are already asking.</span>
+          </h1>
+
+          <p class="hero-text">
+            Tato Bot is a customizable website assistant built to handle common
+            customer questions, help people find what they need, and gracefully
+            hand things off when a human is the better answer.
+          </p>
+
+          <p class="hero-highlight">
+            Buy him once. Make him yours. No Tato Bot subscription.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">Try Tato</a>
+            <a class="button button-secondary" href="#features">See What He Does</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Tato Bot preview">
+          <div class="bot-avatar">
+            <img src="assets/tato-profile.png" alt="Tato">
+          </div>
+
+          <div class="bot-status">
+            <span class="status-dot"></span>
+            Tato is on duty
+          </div>
+
+          <div class="chat-preview">
+            <div class="message message-user">
+              What are your business hours?
+            </div>
+
+            <div class="message message-bot">
+              I can help with that. We're open Monday through Friday from
+              9:00 AM to 5:00 PM.
+            </div>
+
+            <div class="message message-user">
+              What if you don't know the answer?
+            </div>
+
+            <div class="message message-bot">
+              I know what I know. If I can't find a good answer, I'll point you
+              toward the person who can help.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="demo">
+      <div class="container narrow">
+        <p class="eyebrow">TRY THE REAL THING</p>
+        <h2>Tato Bot lives right here on this site.</h2>
+
+        <p>
+          This demo will use the same lightweight question-and-answer behavior
+          included with Tato Bot. Ask him about the product, how it works, what
+          you can customize, or what happens when he doesn't know something.
+        </p>
+
+        <div class="tato-demo" aria-label="Live Tato Bot demo">
+          <div class="tato-demo-header">
+            <img src="assets/tato-profile.png" alt="Tato" class="tato-demo-avatar">
+
+            <div>
+              <strong>Tato Bot</strong>
+              <span><span class="status-dot"></span> On duty</span>
+            </div>
+          </div>
+
+          <div
+            class="tato-demo-messages"
+            id="tato-demo-messages"
+            aria-live="polite"
+          >
+            <div class="demo-message demo-message-bot">
+              Hey. I'm Tato. Ask me about Tato Bot, installation, customization,
+              pricing, AI, or what happens when I don't know the answer.
+            </div>
+          </div>
+
+          <form class="tato-demo-form" id="tato-demo-form">
+            <label class="sr-only" for="tato-demo-input">Ask Tato a question</label>
+            <input
+              id="tato-demo-input"
+              type="text"
+              autocomplete="off"
+              placeholder="Ask Tato something..."
+              maxlength="240"
+              required
+            >
+            <button type="submit">Send</button>
+          </form>
+
+          <div class="demo-suggestions" aria-label="Suggested questions">
+            <button type="button" data-question="How easy is Tato to install?">
+              Easy to install?
+            </button>
+            <button type="button" data-question="Do I need AI?">
+              Do I need AI?
+            </button>
+            <button type="button" data-question="Can I customize Tato?">
+              Can I customize him?
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section install-section" id="install">
+      <div class="container">
+        <div class="install-heading">
+          <p class="eyebrow">EASY TO INSTALL</p>
+          <h2>From download to on duty.</h2>
+          <p>
+            Tato Bot is designed to be useful without turning setup into a
+            software project.
+          </p>
+        </div>
+
+        <div class="install-grid">
+          <article class="install-step">
+            <span>1</span>
+            <h3>Add Tato to your site</h3>
+            <p>
+              Copy the included files into your website using the step-by-step
+              setup guide.
+            </p>
+          </article>
+
+          <article class="install-step">
+            <span>2</span>
+            <h3>Add your business info</h3>
+            <p>
+              Enter your hours, services, contact details, common questions,
+              policies, and other useful information.
+            </p>
+          </article>
+
+          <article class="install-step">
+            <span>3</span>
+            <h3>Make him yours</h3>
+            <p>
+              Change the name, avatar, colors, greeting, personality, and
+              answers to fit your business.
+            </p>
+          </article>
+
+          <article class="install-step">
+            <span>4</span>
+            <h3>Go live</h3>
+            <p>
+              Put the assistant on your site and let it start helping visitors.
+              AI can be added later if you want it.
+            </p>
+          </article>
+        </div>
+
+        <div class="install-note">
+          <strong>No AI account required.</strong>
+          No complicated dashboard. No monthly Tato Bot subscription.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <p class="eyebrow">WHAT HE DOES</p>
+        <h2>Most visitors aren't looking for a conversation. They're looking for an answer.</h2>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Answers common questions</h3>
+            <p>
+              Hours, services, policies, contact details, pricing basics,
+              locations, and the questions your customers ask again and again.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Helps people find things</h3>
+            <p>
+              Tato can guide visitors toward the right page, service,
+              information, or next step instead of making them hunt for it.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Knows when to get a human</h3>
+            <p>
+              If Tato doesn't have a reliable answer, he can direct the visitor
+              to email, call, or otherwise contact the business.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Becomes your assistant</h3>
+            <p>
+              Change the name, greeting, business information, colors,
+              personality, and responses to fit your own website.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="story">
+      <div class="container story-grid">
+        <div class="story-image-wrap">
+          <img src="assets/tato-profile.png" alt="Tato, the inspiration behind Tato Bot">
+        </div>
+
+        <div class="story-copy">
+          <p class="eyebrow">MEET TATO</p>
+          <h2>NillaNinja's trusty sidekick wandered out of the yard.</h2>
+
+          <p>
+            Tato started as the loyal assistant to NillaNinja — always nearby,
+            always watching, and apparently paying more attention than anyone
+            realized.
+          </p>
+
+          <p>
+            One day, the esteemed assistant ventured out of the yard for a
+            moment and put together something of his own: a simple website
+            assistant built to help small businesses answer the questions their
+            visitors ask every day.
+          </p>
+
+          <p>
+            Tato Bot keeps that same spirit. Helpful, approachable, easy to
+            understand, and smart enough to know when a human should take over.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="ai">
+      <div class="container narrow">
+        <p class="eyebrow">TEACH TATO NEW TRICKS</p>
+        <h2>AI is optional.</h2>
+
+        <p>
+          Tato Bot works perfectly well as a focused website assistant without
+          full AI integration. For businesses that want more flexible,
+          conversational responses, AI support can be connected as an
+          additional capability.
+        </p>
+
+        <p class="section-callout">
+          Start simple. Add AI only if it actually helps your business.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="buy">
+      <div class="container narrow center">
+        <p class="eyebrow">MAKE TATO YOURS</p>
+        <h2>Your website. Your assistant. No recurring Tato Bot bill.</h2>
+
+        <p>
+          Tato Bot will be sold as a one-time software purchase with the files,
+          setup instructions, and customization tools needed to make him your own.
+        </p>
+
+        <a class="button button-primary button-large" href="#" aria-disabled="true">
+          Purchase Coming Soon
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Tato Bot — currently operating outside the yard.</p>
+      <p>
+        © 2026
+        <a href="https://nillaninja.com">NillaNinja</a>.
+        Tato Bot.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
