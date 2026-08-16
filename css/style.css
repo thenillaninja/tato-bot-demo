@@ -790,3 +790,51 @@ h3 {
     justify-content: center;
   }
 }
+
+/* Tato Bot purchase price */
+.tato-price {
+  margin: 1.75rem auto 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tato-price-amount {
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 3px solid rgba(72, 195, 242, 0.45);
+  box-shadow: 0 14px 30px rgba(7, 24, 39, 0.10);
+  color: #071827;
+  font-size: clamp(2.1rem, 5vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.tato-price-type {
+  color: #071827;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.tato-price-platform {
+  margin-top: 0.35rem;
+  color: #7f98ad;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.tato-price + a,
+.tato-price + .button,
+.tato-price + .button-primary,
+.tato-price + .button.button-primary {
+  margin-top: 1rem;
+}
